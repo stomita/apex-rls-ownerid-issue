@@ -1,0 +1,9 @@
+<apex:page standardController="MyRecord__c" extensions="MyRecordUpdateExtension">
+<apex:form >
+    <apex:inputText value="{!name}" />
+    <apex:commandButton action="{!updateName}" value="Update Name" />
+    <br/>
+    <apex:commandButton action="{!changeOwnerToMe}" value="Change Owner to Me" />
+    <apex:commandButton action="{!changeOwnerToMeUsingQuery}" value="Change Owner to Me, using Query" />
+</apex:form>
+</apex:page>
