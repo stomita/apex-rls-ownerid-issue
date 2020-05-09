@@ -16,6 +16,10 @@
         <object>MyRecord__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>MyRecordUpdatePage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <tabSettings>
         <tab>MyRecord__c</tab>
         <visibility>Visible</visibility>
