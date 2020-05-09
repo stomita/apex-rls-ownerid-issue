@@ -16,4 +16,10 @@ public with sharing class MyRecordUpdate {
     update rec; // throws INSUFFICIENT_ACCESS_OR_READONLY error
   }
 
+  public void updateText01(Id recordId, String text01) {
+    MyRecord__c rec = new MyRecord__c(Id=recordId, Text01__c=text01);
+    update rec; // throws INSUFFICIENT_ACCESS_OR_READONLY error
+  }
+
+
 }

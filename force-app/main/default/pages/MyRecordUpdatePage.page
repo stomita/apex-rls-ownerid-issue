@@ -3,6 +3,9 @@
     <apex:inputText value="{!name}" />
     <apex:commandButton action="{!updateName}" value="Update Name" />
     <br/>
+    <apex:inputText value="{!text01}" />
+    <apex:commandButton action="{!updateText01}" value="Update Text01" />
+    <br/>
     <apex:commandButton action="{!changeOwnerToMe}" value="Change Owner to Me" />
     <apex:commandButton action="{!changeOwnerToMeUsingQuery}" value="Change Owner to Me, using Query" />
 </apex:form>
