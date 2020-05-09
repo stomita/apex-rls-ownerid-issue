@@ -6,7 +6,7 @@ public with sharing class MyRecordUpdate {
   }
 
   public void changeOwnerToMeUsingQuery(Id recordId) {
-    MyRecord__c rec = [SELECT Id FROM MyRecord__c WHERE Id = :recordId];
+    MyRecord__c rec = [SELECT Id, OwnerId FROM MyRecord__c WHERE Id = :recordId];
     rec.OwnerId = UserInfo.getUserId();
     update rec; // throws INSUFFICIENT_ACCESS_OR_READONLY error
   }
